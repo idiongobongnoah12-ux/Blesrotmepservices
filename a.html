@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Atlas MEP Solutions</title>
+<style>
+  :root{
+    --primary:#ff7a00; /* construction orange */
+    --accent:#ffd400;  /* safety yellow */
+    --muted:#2f3b45;   /* slate gray */
+    --tech:#2b6fa6;    /* steel blue */
+    --green:#2fbf71;   /* sustainability */
+    --bg:#f7f9fb;
+    --radius:10px;
+    --maxw:1100px;
+  }
+  *{box-sizing:border-box}
+  body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:var(--muted);line-height:1.45}
+  .wrap{max-width:var(--maxw);margin:24px auto;padding:20px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo .mark{width:48px;height:48px;background:linear-gradient(135deg,var(--primary),var(--tech));border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+  nav a{margin-left:14px;color:var(--muted);text-decoration:none;font-weight:600}
+  .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;margin-top:18px;align-items:center}
+  .card{background:#fff;padding:22px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(47,59,69,.06)}
+  h1{margin:0 0 8px 0;color:var(--muted)}
+  .cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+  .service{padding:16px;border-radius:8px;border-left:6px solid var(--tech);background:linear-gradient(180deg,#fff,#fbfdff)}
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+  .project{height:140px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#fff);display:flex;align-items:flex-end;padding:12px;color:#222;font-weight:700}
+  footer{margin-top:22px;text-align:center;color:#6b7280;font-size:14px}
+  @media(max-width:880px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <div class="mark" aria-hidden="true"></div>
+      <div>
+        <div style="font-weight:800;color:var(--muted)">Atlas MEP</div>
+        <div style="font-size:12px;color:#6b7280">Mechanical Electrical Plumbing</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="card">
+        <h1>Reliable MEP Engineering for Lagos Projects</h1>
+        <p><strong>Design Build Maintain</strong> — integrated MEP services for commercial and residential construction across Lagos and West Africa.</p>
+        <a class="cta" href="#contact">Get a Quote</a>
+      </div>
+
+      <div id="services" class="services">
+        <div class="service card"><strong>HVAC Design</strong><div>Energy efficient systems and commissioning</div></div>
+        <div class="service card"><strong>Electrical Systems</strong><div>Power distribution, lighting, and controls</div></div>
+        <div class="service card"><strong>Plumbing</strong><div>Sanitary, drainage, and water treatment</div></div>
+        <div class="service card"><strong>Fire & Safety</strong><div>Detection, suppression, and compliance</div></div>
+      </div>
+    </div>
+
+    <aside class="card">
+      <h3 style="margin-top:0">Why Atlas</h3>
+      <ul>
+        <li><strong>Local presence Lagos</strong> — fast site response</li>
+        <li><strong>Certified engineers</strong> with international standards</li>
+        <li><strong>Sustainability focus</strong> and energy audits</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="project card">Commercial Tower</div>
+    <div class="project card">Industrial Plant</div>
+    <div class="project card">Residential Estate</div>
+  </section>
+
+  <section id="contact" class="card" style="margin-top:18px">
+    <h3>Contact</h3>
+    <p><strong>Email</strong> info@atlasmep.ng • <strong>Phone</strong> +234 800 000 0000</p>
+    <p>Replace these placeholders with your real contact details before publishing.</p>
+  </section>
+
+  <footer>© <strong>Atlas MEP</strong> 2026 — Prototype</footer>
+</div>
+</body>
+</html>
